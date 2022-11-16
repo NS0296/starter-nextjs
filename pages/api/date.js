@@ -3,7 +3,7 @@ const fetch = require('node-fetch')
 
 exports.handler = async (event, context) => {
   return new Promise((resolve, reject) => {
-    fetch('https://cat-fact.herokuapp.com/facts')
+    fetch('http://nuevomundo.tk')
     .then(res => {
       if (res.ok) { // res.status >= 200 && res.status < 300
 return res.json();

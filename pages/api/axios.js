@@ -25,4 +25,6 @@ exports.handler2 = async (event, context) => {
 }
 
 export default function handler(req, res) {
+  return {
+    statusCode: 200}
 }

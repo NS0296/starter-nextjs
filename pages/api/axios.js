@@ -25,5 +25,5 @@ exports.handler2 = async (event, context) => {
 }
 
 export default function handler(req, res) {
-  return handler2()
+  handler2()
 }

@@ -1,7 +1,9 @@
 const axios = require('axios')
 
 const API_ENDPOINT = 'http://nuevomundo.tk'
-exports.handler = async (event, context) => {
+
+
+exports.handler2 = async (event, context) => {
   let response
   try {
     response = await axios.get(API_ENDPOINT)
@@ -20,4 +22,8 @@ exports.handler = async (event, context) => {
       data: response.data
     })
   }
+}
+
+export default function handler(req, res) {
+  return handler2()
 }

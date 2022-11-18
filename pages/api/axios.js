@@ -6,26 +6,17 @@ const API_ENDPOINT = 'http://nuevomundo.tk'
 
 
 export default function handler(req, res) {
-  
-  let response
-  try {
-    response = await axios.get(API_ENDPOINT)
-  } catch (err) {
-    return {
-      statusCode: err.statusCode || 500,
-      body: JSON.stringify({
-        error: err.message
-      })
+  axios({
+    method: 'post',
+    url: 'http://nuevomundo.tk',
+    data: {
+      firstName: 'Fred',
+      lastName: 'Flintstone'
     }
-  }
-
-  return {
-    statusCode: 200,
-    body: JSON.stringify({
-      data: response.data
-    })
-  }
-
-  
+  }).then(res => {
+      consloe.log(res)
+  }).catch(err => {
+      console.log(err)
+  })
 
 }

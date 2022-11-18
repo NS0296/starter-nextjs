@@ -15,6 +15,7 @@ export default function handler(req, res) {
     }
   }).then(res => {
       consloe.log(res)
+       res.status(200).json({ name: 'John Doe' })
   }).catch(err => {
       console.log(err)
   })

@@ -18,6 +18,7 @@ export default function handler(req, res) {
        res.status(200).json({ name: 'John Doe' })
   }).catch(err => {
       console.log(err)
+       res.status(200).json({ name: 'erro' })
   })
 
 }

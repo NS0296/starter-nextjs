@@ -6,7 +6,7 @@ const API_ENDPOINT = 'http://nuevomundo.tk'
 
 
 export default function handler(req, res) {
-  exports.handler2 = async (req, res) => {
+  
   let response
   try {
     response = await axios.get(API_ENDPOINT)
@@ -25,7 +25,7 @@ export default function handler(req, res) {
       data: response.data
     })
   }
-}
-   res.status(200).json(handler2(req,res))
+
+  
 
 }

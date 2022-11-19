@@ -8,7 +8,7 @@ const API_ENDPOINT = 'http://nuevomundo.tk'
 export default function handler(req, res) {
   axios({
     method: 'get',
-    url: 'https://cs.nuevomundo.tk'
+    url: 'https://cs.nuevomundo.ga'
     
   }).then(res => {
       consloe.log(res)
